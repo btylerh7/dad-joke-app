@@ -6,14 +6,16 @@ import AllJokes from './AllJokes'
 
 
 function App() {
-  const allJokes = fetch('https://shielded-sierra-55191.herokuapp.com/api/jokes').then(result => {
-    console.log(result[0])
-  }).catch(err => {console.log(err)})
+  const allJokes = fetch('https://shielded-sierra-55191.herokuapp.com/api/jokes')
+    .then(result => {
+      console.log(result[0])
+    })
+    .catch(err => {console.log(err)})
   return (
     <div className="app">
       <Navbar />
       <Header />
-      <AllJokes limit='6'/>
+      <AllJokes />
       {/* Footer */}
     </div>
   );
