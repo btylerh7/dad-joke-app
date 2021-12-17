@@ -8,7 +8,7 @@ import AllJokes from './AllJokes'
 function App() {
   const allJokes = fetch('https://shielded-sierra-55191.herokuapp.com/api/jokes')
     .then(result => {
-      console.log(result[0])
+      console.log(result)
     })
     .catch(err => {console.log(err)})
   return (
