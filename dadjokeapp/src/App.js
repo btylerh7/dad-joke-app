@@ -5,12 +5,9 @@ import AllJokes from './AllJokes'
 
 
 
-function App() {
-  const allJokes = fetch('https://shielded-sierra-55191.herokuapp.com/api/jokes')
-    .then(result => {
-      console.log(result)
-    })
-    .catch(err => {console.log(err)})
+async function App() {
+  const response = await fetch('https://shielded-sierra-55191.herokuapp.com/api/jokes')
+  console.log(response)
   return (
     <div className="app">
       <Navbar />
