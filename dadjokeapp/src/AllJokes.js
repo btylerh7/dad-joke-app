@@ -1,10 +1,18 @@
 import React from 'react'
 
-function AllJokes({ jokes }) {
-    console.log(jokes)
+function AllJokes({ joke }) {
+    // console.log(jokes)
+    // jokes.array.forEach(element => {
+    //     return (
+    //     <div>
+    //         <h1>{element.title}</h1>
+    //         <p>{element.description}</p>
+    //     </div>
+    //     )
+    // });
     return (
         <div className='all-joke'>
-            <p> {jokes} </p>
+            <p>{joke}</p>
         </div>
     )
 }

@@ -5,14 +5,19 @@ import AllJokes from './AllJokes'
 
 
 
-async function App() {
-  const response = await fetch('https://shielded-sierra-55191.herokuapp.com/api/jokes')
-  console.log(response)
+function App() {
+  const allJokes = fetch('https://shielded-sierra-55191.herokuapp.com/api/jokes')
+    .then(response => {
+      return response.json()
+    })
+    .then(data => {
+      return JSON.stringify(data)
+    })
   return (
     <div className="app">
       <Navbar />
       <Header />
-      <AllJokes />
+      <AllJokes joke={allJokes[0].title}/>
       {/* Footer */}
     </div>
   );
