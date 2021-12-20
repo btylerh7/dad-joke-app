@@ -1,0 +1,8 @@
+.joke-card {
+    max-width:100%;
+    border-radius: 1rem;
+    text-align: left;
+    color: var(--dark-text);
+    border: 1px inset var(--main-purple);
+    padding: 2rem;
+}

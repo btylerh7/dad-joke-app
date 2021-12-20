@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+:root {
+    --main-purple: #762bdf;
+    --darker-purple: #3b00ac;
+    --light-text: #ffffff;
+    --dark-text: #333;
+}
+
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.75);
+    min-height: 3rem;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navlist {
+    color: var(--main-purple);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.navlist-item {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+    color: var(--main-purple);
+    padding: 1rem;
+}
+
+.navlist-item:hover {
+    background-color: var(--main-purple);
+    color: var(--light-text);
+    cursor: pointer;
+}
+
