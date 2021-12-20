@@ -20,6 +20,10 @@
     min-height: 3rem;
 }
 
+.navbar a {
+    text-decoration: none;
+}
+
 .navlist {
     color: var(--main-purple);
     display: flex;

@@ -1,33 +1,26 @@
-import React, { useState, useEffect }from 'react'
+import React, { useState, useContext }from 'react'
 import JokeCard from './JokeCard'
 import './AllJokes.css'
+import { JokeContext } from './JokeContext'
+import { HeaderContext } from './HeaderContext'
 
 function AllJokes() {
-    const apiUrl = 'https://shielded-sierra-55191.herokuapp.com/api/jokes'
     let content = null
-    const [joke, setJoke] = useState(null)
+    const [joke, setJoke] = useContext(JokeContext)
+    const [header, setHeader] = useContext(HeaderContext)
 
-    
-    useEffect(() => {
-        fetch(apiUrl)
-            .then(response => {
-                return response.json()
-            })
-            .then(data => {
-                setJoke(data)
-            })
-    }, [apiUrl])
-
+    if(header.hidden) {
+        return(<></>)
+    }
 
     if (joke) {
         content = joke.map((element, key) =>
-            <JokeCard currentJoke={element}/>
+            <JokeCard currentJoke={element} key={element._id}/>
         )
     }
     
     return (
         <>
-            <h2 className='all-jokes-header'>Can't get enough of the jokes? Here's some more!</h2>
             <div className='all-jokes'>
                 {content}
             </div>

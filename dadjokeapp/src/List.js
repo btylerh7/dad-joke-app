@@ -1,8 +1,8 @@
 import React from 'react'
 
-function List({icon, text}) {
+function List({icon, text, onClick}) {
     return (
-        <div className='navlist-item'>
+        <div onClick={onClick} className='navlist-item'>
             <span className='material-icons'>{ icon }</span>
             <li>{ text }</li>
         </div>
