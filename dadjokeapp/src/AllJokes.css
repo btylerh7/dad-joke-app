@@ -1,9 +1,11 @@
 .all-jokes {
     display: grid;
-    max-width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 400px));
+    justify-content: center;
     grid-gap: 1rem;
-    margin: 1rem;
+    padding: 2rem;
     text-align: center;
 }
 .all-jokes-header {
