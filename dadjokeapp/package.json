@@ -1,7 +1,7 @@
 {
   "name": "dadjokeapp",
   "version": "0.1.0",
-  "homepage": "https://robustjumprope.github.io/dad-joke-app/",
+  "homepage": "https://btylerh7.github.io/dad-joke-app/",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
