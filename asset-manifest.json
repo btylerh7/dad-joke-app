@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dad-joke-app/static/css/main.9083e025.css",
+    "main.css": "/dad-joke-app/static/css/main.6fb864a7.css",
     "main.js": "/dad-joke-app/static/js/main.9de172fe.js",
     "index.html": "/dad-joke-app/index.html",
-    "main.9083e025.css.map": "/dad-joke-app/static/css/main.9083e025.css.map",
+    "main.6fb864a7.css.map": "/dad-joke-app/static/css/main.6fb864a7.css.map",
     "main.9de172fe.js.map": "/dad-joke-app/static/js/main.9de172fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.9083e025.css",
+    "static/css/main.6fb864a7.css",
     "static/js/main.9de172fe.js"
   ]
 }
